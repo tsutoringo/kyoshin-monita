@@ -7,7 +7,14 @@ const kyoshinMinita = new Client({
 
 
 kyoshinMinita.on("update", (data) => {
-	console.log(data);
+});
+
+kyoshinMinita.on("earthquake", data => {
+	console.log("earthquake!");
+});
+
+kyoshinMinita.on("newReport", data => {
+	console.log("new Report!");
 });
 
 kyoshinMinita.start();
