@@ -2,7 +2,7 @@
 
 強震モニタを監視するときに使います
 
-isntall:
+install:
 ```
 npm install --save tsutoringo/kyoshin-monita
 ```
