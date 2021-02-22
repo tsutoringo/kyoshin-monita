@@ -17,14 +17,14 @@ const kyoshinMinita = new Client({
 
 
 
-kyoshinMinita.on("update", (data) => {
+kyoshinMinita.on("update", ({imageURLs, eew}) => {
 });
 
-kyoshinMinita.on("earthquake", data => {
+kyoshinMinita.on("earthquake", ({imageURLs, eew}) => {
 	console.log("earthquake!");
 });
 
-kyoshinMinita.on("newReport", data => {
+kyoshinMinita.on("newReport", ({imageURLs, eew}) => {
 	console.log("new Report!");
 });
 
