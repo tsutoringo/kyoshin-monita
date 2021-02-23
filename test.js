@@ -14,7 +14,7 @@ kyoshinMinita.on("earthquake", data => {
 });
 
 kyoshinMinita.on("newReport", data => {
-	console.log("new Report!", data.eew);
+	console.log("new Report!", `${data.eew.maxScale.suffix}`);
 });
 
 kyoshinMinita.start();
