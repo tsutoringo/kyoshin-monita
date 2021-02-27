@@ -19,16 +19,16 @@ const kyoshinMinita = new Client({
 
 
 // updateFrequencyで指定した時間周期で取得が終わり次第呼び出されます
-kyoshinMinita.on("update", ({imageURLs, eew}) => {
+kyoshinMinita.on("update", ({eew}) => {
 });
 
 // 新しい地震が発生すると呼ばれます
-kyoshinMinita.on("earthquake", ({imageURLs, eew}) => {
+kyoshinMinita.on("earthquake", ({eew}) => {
 	console.log("earthquake!");
 });
 
 // 新しいレポートが出されると呼び出されます
-kyoshinMinita.on("newReport", ({imageURLs, eew}) => {
+kyoshinMinita.on("newReport", ({eew}) => {
 	console.log("new Report!");
 });
 

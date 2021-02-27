@@ -7,6 +7,7 @@ const kyoshinMinita = new Client({
 
 
 kyoshinMinita.on("update", (data) => {
+	console.log("Update!", `${data.eew.images.JMA}`);
 });
 
 kyoshinMinita.on("earthquake", data => {
@@ -14,7 +15,6 @@ kyoshinMinita.on("earthquake", data => {
 });
 
 kyoshinMinita.on("newReport", data => {
-	console.log("new Report!", `${data.eew}`);
 });
 
 kyoshinMinita.start();
